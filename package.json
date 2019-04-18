@@ -12,5 +12,9 @@
 		"boilerplate"
 	],
 	"author": "HansTH",
-	"license": "ISC"
+	"license": "ISC",
+	"devDependencies": {
+		"webpack": "^4.30.0",
+		"webpack-cli": "^3.3.0"
+	}
 }
