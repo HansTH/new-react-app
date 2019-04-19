@@ -7,5 +7,10 @@ module.exports = merge(common, {
 	output: {
 		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist')
+	},
+	devServer: {
+		historyApiFallback: true,
+		port: '3000',
+		open: 'Google chrome'
 	}
 });
