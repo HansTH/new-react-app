@@ -1,2 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
 import './main.css';
-alert('hello webpack');
+
+ReactDOM.render(<App />, document.getElementById('root'));
