@@ -4,7 +4,8 @@
 	"description": "react-boilerplate",
 	"private": true,
 	"scripts": {
-		"start": "webpack"
+		"start": "webpack --config webpack.dev",
+		"build": "webpack --config webpack.prod"
 	},
 	"keywords": [
 		"react",
