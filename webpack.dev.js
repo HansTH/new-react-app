@@ -6,8 +6,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(common, {
 	mode: 'development',
 	output: {
-		filename: 'main.js',
-		path: path.resolve(__dirname, 'dist')
+		filename: 'build.js',
+		path: path.resolve(__dirname, 'build')
 	},
 	module: {
 		rules: [
@@ -25,7 +25,7 @@ module.exports = merge(common, {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './index.html',
-			favicon: './src/assets/HansTH.png'
+			favicon: './src/assets/favicon.png'
 		})
 	]
 });

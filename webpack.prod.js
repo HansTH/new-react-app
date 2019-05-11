@@ -10,8 +10,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(common, {
 	mode: 'production',
 	output: {
-		filename: 'main[contentHash].js',
-		path: path.resolve(__dirname, 'dist')
+		filename: 'build[contentHash].js',
+		path: path.resolve(__dirname, 'build')
 	},
 	module: {
 		rules: [
@@ -33,7 +33,7 @@ module.exports = merge(common, {
 			new TerserPlugin(),
 			new HtmlWebpackPlugin({
 				template: './index.html',
-				favicon: './src/assets/HansTH.png',
+				favicon: './src/assets/favicon.png',
 				minify: {
 					removeComments: true,
 					removeAttributeQuotes: true,
